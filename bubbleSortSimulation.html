@@ -1,0 +1,106 @@
+<html>
+<title>Simulation of Bubble sort using Javascript and PHP</title>
+<head>
+    
+
+    <link rel="stylesheet" type="text/css" href="bubbleSortDesign.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <!-- File which contains all logic for graph plotting and internal calculation -->
+    <script src="bubbleSortConstantsFile.js" defer></script>
+    <script src="bubbleSortJS.js" defer></script>
+    
+</head>
+<body>
+    <div>
+        <!-- Manually step through an individual bubble sort step -->
+        <button id='stepup' class='button'  onclick='bubbleSort()'>Step</button>
+        <button class='button' id='initializeButton' disabled='true' onclick='reset()'>Init</button>
+        <button class='button' onclick='auto()'>Play</button>
+        <button class='button' onclick='orderelements(0)'>Ascending</button>
+        <button class='button' onclick='orderelements(1)'>Descending</button>
+
+        <br/><br/>
+
+        <table>
+            <tr>
+                <td>
+                    Index:
+                </td>
+                <td>
+                    <input id='index' type='text' value='index'>
+                </td>
+                <td>
+                    Swap
+                </td>
+                <td>
+                    <input id='swap' type='text' value=''>
+                </td>
+                <td>
+                    <div id='pr'>Processing</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Current(arr[index])
+                </td>
+                <td>
+                    <input id='currentarrindex' type='text' value='currentarrindex'>
+                </td>
+                <td>
+                    Swapped
+                </td>
+                <td>
+                    <input id='swapped' type='text' value=''>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Next(arr[index+1])
+                </td>
+                <td>
+                    <input id='nextarrindex' type='text' value='nextarrindex'>
+                </td>
+                <td>
+                    Number of Elements:
+                </td>
+                <td>
+                    <input id='numelementstext' type='text' value='10'>
+                </td>
+                <td>
+                    <div id='maxValue'>
+                        <button class='button' onclick="getmaxmin(1)">Get Maximum Value</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Min Number
+                </td>
+                <td>
+                    <input id='minno' type='text' value='0'>
+                </td>
+                <td>
+                    Max number
+                </td>
+                <td>
+                    <input id='maxno' type='text' value='100'>
+                </td>
+                <td>
+                    <div id='minValue'>
+                        <button class='button' onclick="getmaxmin(2)">Get Minimum Value</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br/>
+        <div id='swappingprocess'>Click Step or play to start</div>
+    </div>
+    <div id='numbertable'>
+    </div>
+    <!--Canvas element to draw graphical depiction of how -->
+    <canvas id='graph'>
+    </canvas>
+</body>
+</html>

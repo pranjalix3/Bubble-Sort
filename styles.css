@@ -1,0 +1,16 @@
+/* /canvas
+{
+    transform: rotate(180deg);
+} */
+.inh01{
+    display: inline;
+}
+.invs{
+    display:none;
+}
+
+p{
+    display: inline;
+}
+td{padding: 0 0 0 0;
+height: 20px;}

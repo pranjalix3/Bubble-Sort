@@ -1,0 +1,93 @@
+
+/*	<!-- Style Elements for button and text input boxes -->*/
+
+.button {
+    background-color: #E3E1B8; 
+    padding: 6px 6px;
+    font: 13px sans-serif;
+    text-decoration: none;
+    border: 1px solid #000;
+    border-color: #aaa #444 #444 #aaa;
+    color: #000
+}
+
+.button:active {
+    background-color: #B39ADB; 
+}
+#stepup:active {
+    background-color: #B39ADB; 
+}
+
+#swappingprocess{
+	background-color:#f8f8f8; border: 2px solid blue;
+	padding:5px;
+}
+
+input[type='text']{
+	 border: 5px solid white; 
+    -webkit-box-shadow: 
+      inset 0 0 2px  rgba(0,0,0,0.1),
+            0 0 2px rgba(0,0,0,0.1); 
+    -moz-box-shadow: 
+      inset 0 0 2px  rgba(0,0,0,0.1),
+            0 0 2px rgba(0,0,0,0.1); 
+    box-shadow: 
+      inset 0 0 2px  rgba(0,0,0,0.1),
+            0 0 2px rgba(0,0,0,0.1); 
+    padding: 5px;
+    background: rgba(255,255,255,0.5);
+    margin: 0 0 2px 0;
+}
+/* Table elements styling */
+
+        #numbertable {
+            margin-left: 950px;
+            margin-top: -200px;
+            padding: 20px 20px;
+            position: absolute;
+            position:relative;
+            left:20px;
+            bottom: 20px;
+            text-align: center;
+        }
+
+        #graph {
+            left: 40px;
+            top: 350px;
+            position: absolute;
+        }
+
+        #swappingprocess {
+            position: absolute;
+        }
+
+        table,td,th {
+            background-color: #e0ffff;
+            border: 2px solid green;
+        }
+        th {
+            font-size: 1.1em;
+            text-align: left;
+            padding-top: 5px;
+            padding-bottom: 4px;
+            background-color: #A7C942;
+            color: #ffffff;
+        }
+        td {
+            overflow: hidden;
+            text-align: center;
+        }
+        table#inputarrays {
+            border: 2px solid blue;
+        }
+        #inputarrays td,
+        th {
+            width: 80px;
+        }
+/* Body Background color */
+        body{
+        	background-color: #999966;
+        }
+
+
+/*<!-- End of css Styles -->*/

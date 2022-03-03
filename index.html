@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>drawing</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      button{
+        width: 50px;
+        
+        color: gray;
+      }
+    </style>
+      
+  </head>
+  <body>
+
+    <h4 class="inh01">Enter the size of the array:</h4>
+    <input type="text" class="in01">
+    <input type="button" value="Create Array" onclick="createArray()"; class="inb01">
+    <br>
+    
+    <div class="invs divin01" >
+        <select name="" id="dd01" class="ddc01" >  
+          
+           <option value="User-Defined">User-Defined</option>
+          <option value="Random">Random</option>
+        </select>
+        <input type="button" value="Choose type" onclick="user_choice();" class="inb02" >
+      </div>
+
+      <div class="invs divin02" >
+        <h4>Enter the elements:</h4>
+        <p class="p001">[0]</p>
+        <input type="text" class="in02">
+        <input type="button" value="Enter the element" onclick="add_ele();"; class="inb03">
+        
+        </div>
+        <br>
+        <div  >
+        <input type="button" value="Draw the array" onclick="draw_arr();" class="invs inb04" >
+        </div>
+        
+    <div class="btns" style="visibility: hidden;" >
+      <br>
+    Select the Speed to Start
+    <button style="position: absolute; top: absolute; left: 180px; height: 25px;" onclick="start(1); this.onclick=null;" id="1">1</button>
+    <button style="position: absolute; top: absolute; left: 240px; height:25px;" onclick="start(2);"id="2">2</button>
+    <button style="position: absolute; top: absolute; left: 300px; height:25px" onclick="start(3);"id="3">3</button>
+    <button style="position: absolute; top: absolute; left: 360px; height:25px;" onclick="start(4);"id="4">4</button>
+    <button style="position: absolute; top: absolute; left: 420px; height:25px;" onclick="start(5);"id="5">5</button>
+    <button style="position: absolute; top: absolute; left: 480px; height:25px" onclick="start(6);"id="6">6</button>
+    </div>
+
+<br>
+    
+    <input type="button" value="Complexity" onclick="complexity();" >
+    <p class="timeComplexity"></p>
+    <br><br>
+    <input type="button" value="reset" onclick="reset();" >
+    <br>
+    
+    <div style=" position: absolute; top:5px;right: 10px;">
+      <h1>Color Description</h1>
+      <table>
+        <tr>
+          <td style="color: gray;">
+            Grey
+          </td>
+          <td style="color: gray;">
+            Unsorted Array
+          </td>
+        </tr>
+        <tr>
+          <td style="color: #dbcdad;">
+            Yellow
+          </td>
+          <td style="color: #dbcdad;">
+            Larger Element
+          </td>
+        </tr>
+        <tr>
+          <td style="color: #a8df65;">
+            Green
+          </td>
+          <td style="color: #a8df65;">
+            Smaller Element
+          </td>
+        </tr>
+        <tr>
+          <td style="color:#3c2946;">
+            Purple
+          </td>
+          <td style="color:#3c2946;">
+            Comparing two Elements
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Black
+          </td>
+          <td>
+            Sorted Array
+          </td>
+        </tr>
+      </table>
+    
+       </div>
+    
+
+    <canvas></canvas>
+    <script src="canvas.js"></script>
+  </body>
+</html>
